@@ -1,0 +1,9 @@
+{
+  "name": "kbar-fuse-oracle",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "command-score": "^0.1.2",
+    "fuse.js": "6.6.2"
+  }
+}

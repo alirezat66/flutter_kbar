@@ -1,0 +1,8415 @@
+{
+  "generator": "tool/fuse_oracle/generate.mjs",
+  "fuseVersion": "6.6.2",
+  "options": {
+    "keys": [
+      {
+        "name": "name",
+        "weight": 0.5
+      },
+      {
+        "name": "keywords",
+        "weight": 0.5,
+        "split": ","
+      },
+      {
+        "name": "subtitle",
+        "weight": 1
+      }
+    ],
+    "ignoreLocation": true,
+    "threshold": 0.2,
+    "minMatchCharLength": 1
+  },
+  "actions": [
+    {
+      "id": "a01",
+      "name": "Toggle theme",
+      "keywords": "dark,light,appearance",
+      "subtitle": "Switch between light and dark"
+    },
+    {
+      "id": "a02",
+      "name": "Set theme to dark",
+      "keywords": "night",
+      "subtitle": "Always use the dark theme"
+    },
+    {
+      "id": "a03",
+      "name": "Set theme to light",
+      "keywords": "day",
+      "subtitle": "Always use the light theme"
+    },
+    {
+      "id": "a04",
+      "name": "Set theme to system",
+      "keywords": "auto",
+      "subtitle": "Follow the operating system"
+    },
+    {
+      "id": "a05",
+      "name": "Open settings",
+      "keywords": "preferences,config",
+      "subtitle": "Application settings"
+    },
+    {
+      "id": "a06",
+      "name": "Open keyboard shortcuts",
+      "keywords": "keybindings,hotkeys",
+      "subtitle": ""
+    },
+    {
+      "id": "a07",
+      "name": "Open file",
+      "keywords": "load",
+      "subtitle": "Open a file from disk"
+    },
+    {
+      "id": "a08",
+      "name": "Open recent file",
+      "keywords": "history",
+      "subtitle": ""
+    },
+    {
+      "id": "a09",
+      "name": "Open folder",
+      "keywords": "directory",
+      "subtitle": ""
+    },
+    {
+      "id": "a10",
+      "name": "Save",
+      "keywords": "write,persist",
+      "subtitle": "Save the current file"
+    },
+    {
+      "id": "a11",
+      "name": "Save as",
+      "keywords": "write,copy",
+      "subtitle": "Save under a new name"
+    },
+    {
+      "id": "a12",
+      "name": "Save all",
+      "keywords": "write",
+      "subtitle": ""
+    },
+    {
+      "id": "a13",
+      "name": "Close file",
+      "keywords": "",
+      "subtitle": ""
+    },
+    {
+      "id": "a14",
+      "name": "Close all files",
+      "keywords": "",
+      "subtitle": ""
+    },
+    {
+      "id": "a15",
+      "name": "Close window",
+      "keywords": "quit",
+      "subtitle": ""
+    },
+    {
+      "id": "a16",
+      "name": "Git status",
+      "keywords": "vcs,source control",
+      "subtitle": "Show the working tree status"
+    },
+    {
+      "id": "a17",
+      "name": "Git commit",
+      "keywords": "vcs,save",
+      "subtitle": "Record changes to the repository"
+    },
+    {
+      "id": "a18",
+      "name": "Git push",
+      "keywords": "vcs,upload",
+      "subtitle": "Push commits to the remote"
+    },
+    {
+      "id": "a19",
+      "name": "Git pull",
+      "keywords": "vcs,download,fetch",
+      "subtitle": "Fetch and integrate"
+    },
+    {
+      "id": "a20",
+      "name": "Git checkout branch",
+      "keywords": "vcs,switch",
+      "subtitle": ""
+    },
+    {
+      "id": "a21",
+      "name": "Git create branch",
+      "keywords": "vcs,new",
+      "subtitle": ""
+    },
+    {
+      "id": "a22",
+      "name": "Git stash changes",
+      "keywords": "vcs",
+      "subtitle": ""
+    },
+    {
+      "id": "a23",
+      "name": "Search in files",
+      "keywords": "find,grep,ripgrep",
+      "subtitle": "Search across the project"
+    },
+    {
+      "id": "a24",
+      "name": "Search and replace",
+      "keywords": "find,substitute",
+      "subtitle": ""
+    },
+    {
+      "id": "a25",
+      "name": "Go to line",
+      "keywords": "jump,navigate",
+      "subtitle": ""
+    },
+    {
+      "id": "a26",
+      "name": "Go to symbol",
+      "keywords": "jump,navigate,definition",
+      "subtitle": ""
+    },
+    {
+      "id": "a27",
+      "name": "Go to definition",
+      "keywords": "jump,navigate",
+      "subtitle": ""
+    },
+    {
+      "id": "a28",
+      "name": "Go back",
+      "keywords": "navigate,history",
+      "subtitle": ""
+    },
+    {
+      "id": "a29",
+      "name": "Go forward",
+      "keywords": "navigate,history",
+      "subtitle": ""
+    },
+    {
+      "id": "a30",
+      "name": "Format document",
+      "keywords": "prettier,beautify",
+      "subtitle": "Reformat the whole file"
+    },
+    {
+      "id": "a31",
+      "name": "Format selection",
+      "keywords": "prettier",
+      "subtitle": ""
+    },
+    {
+      "id": "a32",
+      "name": "Toggle sidebar",
+      "keywords": "panel,layout",
+      "subtitle": ""
+    },
+    {
+      "id": "a33",
+      "name": "Toggle terminal",
+      "keywords": "console,shell",
+      "subtitle": "Show or hide the terminal"
+    },
+    {
+      "id": "a34",
+      "name": "Toggle full screen",
+      "keywords": "maximise,layout",
+      "subtitle": ""
+    },
+    {
+      "id": "a35",
+      "name": "Toggle word wrap",
+      "keywords": "layout",
+      "subtitle": ""
+    },
+    {
+      "id": "a36",
+      "name": "Zoom in",
+      "keywords": "bigger,scale",
+      "subtitle": ""
+    },
+    {
+      "id": "a37",
+      "name": "Zoom out",
+      "keywords": "smaller,scale",
+      "subtitle": ""
+    },
+    {
+      "id": "a38",
+      "name": "Reset zoom",
+      "keywords": "scale",
+      "subtitle": ""
+    },
+    {
+      "id": "a39",
+      "name": "New file",
+      "keywords": "create",
+      "subtitle": ""
+    },
+    {
+      "id": "a40",
+      "name": "New window",
+      "keywords": "create",
+      "subtitle": ""
+    },
+    {
+      "id": "a41",
+      "name": "New terminal",
+      "keywords": "create,shell",
+      "subtitle": ""
+    },
+    {
+      "id": "a42",
+      "name": "Rename symbol",
+      "keywords": "refactor",
+      "subtitle": ""
+    },
+    {
+      "id": "a43",
+      "name": "Extract method",
+      "keywords": "refactor",
+      "subtitle": ""
+    },
+    {
+      "id": "a44",
+      "name": "Run all tests",
+      "keywords": "test,check",
+      "subtitle": "Run the entire test suite"
+    },
+    {
+      "id": "a45",
+      "name": "Run test at cursor",
+      "keywords": "test",
+      "subtitle": ""
+    },
+    {
+      "id": "a46",
+      "name": "Debug: start",
+      "keywords": "run,breakpoint",
+      "subtitle": ""
+    },
+    {
+      "id": "a47",
+      "name": "Debug: stop",
+      "keywords": "run",
+      "subtitle": ""
+    },
+    {
+      "id": "a48",
+      "name": "Toggle breakpoint",
+      "keywords": "debug",
+      "subtitle": ""
+    },
+    {
+      "id": "a49",
+      "name": "Copy path of active file",
+      "keywords": "clipboard",
+      "subtitle": ""
+    },
+    {
+      "id": "a50",
+      "name": "Reveal in file explorer",
+      "keywords": "finder,show",
+      "subtitle": ""
+    },
+    {
+      "id": "a51",
+      "name": "Install extension",
+      "keywords": "plugin,addon",
+      "subtitle": ""
+    },
+    {
+      "id": "a52",
+      "name": "Reload window",
+      "keywords": "restart,refresh",
+      "subtitle": ""
+    },
+    {
+      "id": "a53",
+      "name": "Report an issue",
+      "keywords": "bug,feedback",
+      "subtitle": ""
+    },
+    {
+      "id": "a54",
+      "name": "Check for updates",
+      "keywords": "upgrade",
+      "subtitle": ""
+    },
+    {
+      "id": "a55",
+      "name": "Sign out",
+      "keywords": "logout,account",
+      "subtitle": ""
+    },
+    {
+      "id": "a56",
+      "name": "Switch account",
+      "keywords": "profile,user",
+      "subtitle": ""
+    },
+    {
+      "id": "a57",
+      "name": "Documentation",
+      "keywords": "docs,help,manual",
+      "subtitle": "Read the documentation"
+    },
+    {
+      "id": "a58",
+      "name": "Keyboard shortcuts reference",
+      "keywords": "help",
+      "subtitle": ""
+    },
+    {
+      "id": "a59",
+      "name": "Contact support",
+      "keywords": "help,email",
+      "subtitle": ""
+    },
+    {
+      "id": "a60",
+      "name": "Clear cache and reload the application window",
+      "keywords": "reset,restart",
+      "subtitle": "A deliberately long name"
+    }
+  ],
+  "cases": [
+    {
+      "query": "t",
+      "results": [
+        {
+          "id": "a30",
+          "score": 0.000002751059604990365,
+          "kbarScore": 0.9999972489479633,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Format document",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "beautify",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "prettier",
+              "indices": [
+                [
+                  3,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Reformat the whole file",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.000008570378452303693,
+          "kbarScore": 0.9999914296949985,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  23,
+                  23
+                ],
+                [
+                  34,
+                  34
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "restart",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "reset",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "A deliberately long name",
+              "indices": [
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a10",
+          "score": 0.00003162277660168379,
+          "kbarScore": 0.9999683782233666,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "persist",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "write",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  15,
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a19",
+          "score": 0.00005110930790373911,
+          "kbarScore": 0.9999488933041242,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git pull",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "fetch",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Fetch and integrate",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a55",
+          "score": 0.00008699614330652678,
+          "kbarScore": 0.9999130114243641,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Sign out",
+              "indices": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "account",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "logout",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.0001254584737857997,
+          "kbarScore": 0.9998745572640685,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "light",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Switch between light and dark",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  19,
+                  19
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a26",
+          "score": 0.0001363013006207827,
+          "kbarScore": 0.9998637172748919,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to symbol",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "definition",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a04",
+          "score": 0.00017782794100389224,
+          "kbarScore": 0.9998222036761504,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to system",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "auto",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Follow the operating system",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a44",
+          "score": 0.00019656219805803688,
+          "kbarScore": 0.9998034764310467,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Run all tests",
+              "indices": [
+                [
+                  8,
+                  8
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "test",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Run the entire test suite",
+              "indices": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  23,
+                  23
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a02",
+          "score": 0.00025644840365177167,
+          "kbarScore": 0.9997436173452707,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "night",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  11,
+                  11
+                ],
+                [
+                  20,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a16",
+          "score": 0.00034514373933585633,
+          "kbarScore": 0.9996549753437642,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git status",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "source control",
+              "indices": [
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Show the working tree status",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  23,
+                  23
+                ],
+                [
+                  25,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a57",
+          "score": 0.0005874893525297769,
+          "kbarScore": 0.9994128555885604,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Documentation",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Read the documentation",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a05",
+          "score": 0.0006584154299433825,
+          "kbarScore": 0.9993420177956925,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open settings",
+              "indices": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Application settings",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  14,
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a28",
+          "score": 0.0009999999999999998,
+          "kbarScore": 0.9990009990009991,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "history",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a29",
+          "score": 0.0009999999999999998,
+          "kbarScore": 0.9990009990009991,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "history",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a31",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Format selection",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  12,
+                  12
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "prettier",
+              "indices": [
+                [
+                  3,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a32",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle sidebar",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "layout",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a41",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New terminal",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "create",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a43",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Extract method",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "refactor",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a46",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Debug: start",
+              "indices": [
+                [
+                  8,
+                  8
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "breakpoint",
+              "indices": [
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git commit",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Record changes to the repository",
+              "indices": [
+                [
+                  15,
+                  15
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  28,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a18",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git push",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Push commits to the remote",
+              "indices": [
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Show or hide the terminal",
+              "indices": [
+                [
+                  13,
+                  13
+                ],
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a06",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open keyboard shortcuts",
+              "indices": [
+                [
+                  18,
+                  18
+                ],
+                [
+                  21,
+                  21
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "hotkeys",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a08",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open recent file",
+              "indices": [
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "history",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a20",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git checkout branch",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "switch",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a25",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to line",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a27",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to definition",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  12,
+                  12
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a34",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle full screen",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "layout",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a35",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle word wrap",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "layout",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a45",
+          "score": 0.00562341325190349,
+          "kbarScore": 0.9944080326911652,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Run test at cursor",
+              "indices": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "test",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  17,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  11,
+                  11
+                ],
+                [
+                  19,
+                  19
+                ],
+                [
+                  21,
+                  21
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a09",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "directory",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a11",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "write",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a12",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "write",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a15",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "quit",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a23",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Search across the project",
+              "indices": [
+                [
+                  14,
+                  14
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a24",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "substitute",
+              "indices": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a39",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "create",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a40",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "create",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a42",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "refactor",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a52",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "restart",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a37",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Zoom out",
+              "indices": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a38",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reset zoom",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a47",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Debug: stop",
+              "indices": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a48",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle breakpoint",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a51",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Install extension",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a56",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Switch account",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  13,
+                  13
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a59",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Contact support",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a21",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git create branch",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a22",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git stash changes",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a53",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Report an issue",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a54",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Check for updates",
+              "indices": [
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a58",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Keyboard shortcuts reference",
+              "indices": [
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a49",
+          "score": 0.21355020860474386,
+          "kbarScore": 0.824028534550483,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Copy path of active file",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  15,
+                  15
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "th",
+      "results": [
+        {
+          "id": "a04",
+          "score": 0.00562341325190349,
+          "kbarScore": 0.9944080326911652,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to system",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Follow the operating system",
+              "indices": [
+                [
+                  7,
+                  8
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a02",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  11,
+                  12
+                ],
+                [
+                  20,
+                  21
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  11,
+                  12
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  22
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a57",
+          "score": 0.01857804455091699,
+          "kbarScore": 0.9817608040441242,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Read the documentation",
+              "indices": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a10",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  5,
+                  6
+                ],
+                [
+                  15,
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a23",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Search across the project",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  14,
+                  15
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a30",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Reformat the whole file",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  10
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a16",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Show the working tree status",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  5,
+                  6
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  23,
+                  23
+                ],
+                [
+                  25,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Record changes to the repository",
+              "indices": [
+                [
+                  8,
+                  8
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  28,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a18",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Push commits to the remote",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Show or hide the terminal",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a44",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Run the entire test suite",
+              "indices": [
+                [
+                  4,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  23,
+                  23
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  7,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a43",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Extract method",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  10,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a49",
+          "score": 0.21355020860474386,
+          "kbarScore": 0.824028534550483,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Copy path of active file",
+              "indices": [
+                [
+                  7,
+                  8
+                ],
+                [
+                  15,
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.27101916318908426,
+          "kbarScore": 0.7867701990353343,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  23,
+                  24
+                ],
+                [
+                  34,
+                  34
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "the",
+      "results": [
+        {
+          "id": "a04",
+          "score": 0.00562341325190349,
+          "kbarScore": 0.9944080326911652,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to system",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Follow the operating system",
+              "indices": [
+                [
+                  7,
+                  9
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  24,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a02",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  20,
+                  22
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  23
+                ],
+                [
+                  25,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a57",
+          "score": 0.01857804455091699,
+          "kbarScore": 0.9817608040441242,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Read the documentation",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  14,
+                  14
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a10",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  20,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a23",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Search across the project",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  14,
+                  16
+                ],
+                [
+                  22,
+                  22
+                ],
+                [
+                  24,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a30",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Reformat the whole file",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  14,
+                  14
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  22,
+                  22
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a16",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Show the working tree status",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  5,
+                  7
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  19,
+                  20
+                ],
+                [
+                  23,
+                  23
+                ],
+                [
+                  25,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Record changes to the repository",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  18,
+                  20
+                ],
+                [
+                  23,
+                  23
+                ],
+                [
+                  28,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a18",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Push commits to the remote",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  18
+                ],
+                [
+                  21,
+                  21
+                ],
+                [
+                  24,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Show or hide the terminal",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  13,
+                  15
+                ],
+                [
+                  17,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a44",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Run the entire test suite",
+              "indices": [
+                [
+                  4,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  23,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  9
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.27101916318908426,
+          "kbarScore": 0.7867701990353343,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  9,
+                  10
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  23,
+                  25
+                ],
+                [
+                  34,
+                  34
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "them",
+      "results": [
+        {
+          "id": "a02",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  20,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a04",
+          "score": 0.17782794100389226,
+          "kbarScore": 0.8490204427886767,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to system",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  18
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "theme",
+      "results": [
+        {
+          "id": "a02",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  20,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a04",
+          "score": 0.17782794100389226,
+          "kbarScore": 0.8490204427886767,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to system",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a44",
+          "score": 0.48703526447993084,
+          "kbarScore": 0.672479008323811,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Run the entire test suite",
+              "indices": [
+                [
+                  4,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  16
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  23,
+                  24
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "themes",
+      "results": [
+        {
+          "id": "a02",
+          "score": 0.286832645492536,
+          "kbarScore": 0.7771018271122966,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  20,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.286832645492536,
+          "kbarScore": 0.7771018271122966,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  16,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  11,
+                  13
+                ],
+                [
+                  18,
+                  19
+                ],
+                [
+                  21,
+                  25
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.5307909786805269,
+          "kbarScore": 0.6532570507189395,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a04",
+          "score": 0.6389431042462724,
+          "kbarScore": 0.6101493074464512,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to system",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  18
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "dark",
+      "results": [
+        {
+          "id": "a01",
+          "score": 6.795479594935419e-10,
+          "kbarScore": 0.999999999320452,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "dark",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Switch between light and dark",
+              "indices": [
+                [
+                  21,
+                  21
+                ],
+                [
+                  23,
+                  23
+                ],
+                [
+                  25,
+                  28
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a02",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to dark",
+              "indices": [
+                [
+                  13,
+                  16
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the dark theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  15,
+                  18
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "lite",
+      "results": []
+    },
+    {
+      "query": "light",
+      "results": [
+        {
+          "id": "a01",
+          "score": 6.795479594935419e-10,
+          "kbarScore": 0.999999999320452,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "light",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Switch between light and dark",
+              "indices": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  15,
+                  19
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  17
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  11,
+                  12
+                ],
+                [
+                  15,
+                  19
+                ],
+                [
+                  21,
+                  22
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a02",
+          "score": 0.4472135954999579,
+          "kbarScore": 0.6909830056250527,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "night",
+              "indices": [
+                [
+                  1,
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "g",
+      "results": [
+        {
+          "id": "a05",
+          "score": 0.000020820924052201168,
+          "kbarScore": 0.9999791795094497,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open settings",
+              "indices": [
+                [
+                  11,
+                  11
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "config",
+              "indices": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Application settings",
+              "indices": [
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a01",
+          "score": 0.0001254584737857997,
+          "kbarScore": 0.9998745572640685,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "light",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Switch between light and dark",
+              "indices": [
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a23",
+          "score": 0.0009999999999999998,
+          "kbarScore": 0.9990009990009991,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "ripgrep",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "grep",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a19",
+          "score": 0.0016162182261066137,
+          "kbarScore": 0.9983863897202374,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git pull",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Fetch and integrate",
+              "indices": [
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a28",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go back",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a29",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go forward",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a48",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle breakpoint",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "debug",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a55",
+          "score": 0.0027510596049903652,
+          "kbarScore": 0.9972564879601582,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Sign out",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "logout",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a16",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git status",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Show the working tree status",
+              "indices": [
+                [
+                  15,
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git commit",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Record changes to the repository",
+              "indices": [
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a25",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to line",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a26",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to symbol",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a27",
+          "score": 0.004310225580049957,
+          "kbarScore": 0.9957082727326005,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to definition",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "navigate",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a03",
+          "score": 0.008109610578538406,
+          "kbarScore": 0.991955626160647,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Set theme to light",
+              "indices": [
+                [
+                  15,
+                  15
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Always use the light theme",
+              "indices": [
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a02",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "night",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a04",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Follow the operating system",
+              "indices": [
+                [
+                  19,
+                  19
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a06",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "keybindings",
+              "indices": [
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a36",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "bigger",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a51",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "plugin",
+              "indices": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a53",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "bug",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a54",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "upgrade",
+              "indices": [
+                [
+                  2,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "A deliberately long name",
+              "indices": [
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a18",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git push",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a32",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle sidebar",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a46",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Debug: start",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a47",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Debug: stop",
+              "indices": [
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a20",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git checkout branch",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a21",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git create branch",
+              "indices": [
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a22",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git stash changes",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a34",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle full screen",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a35",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle word wrap",
+              "indices": [
+                [
+                  2,
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "gi",
+      "results": [
+        {
+          "id": "a51",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "plugin",
+              "indices": [
+                [
+                  3,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a16",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git status",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git commit",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a18",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git push",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a19",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git pull",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a20",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git checkout branch",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a21",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git create branch",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a22",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git stash changes",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "git",
+      "results": [
+        {
+          "id": "a16",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git status",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git commit",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  8,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a18",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git push",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a19",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git pull",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a20",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git checkout branch",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a21",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git create branch",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a22",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git stash changes",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "gits",
+      "results": []
+    },
+    {
+      "query": "gitp",
+      "results": []
+    },
+    {
+      "query": "git p",
+      "results": [
+        {
+          "id": "a18",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git push",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a19",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git pull",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a16",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git status",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git commit",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  8,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a20",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git checkout branch",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  11,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a21",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git create branch",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a22",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git stash changes",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "push",
+      "results": [
+        {
+          "id": "a18",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Git push",
+              "indices": [
+                [
+                  4,
+                  7
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Push commits to the remote",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "psh",
+      "results": []
+    },
+    {
+      "query": "save",
+      "results": [
+        {
+          "id": "a10",
+          "score": 4.712160915387242e-10,
+          "kbarScore": 0.9999999995287838,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Save",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  20,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "save",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a11",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Save as",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Save under a new name",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  14,
+                  14
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  20,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a12",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Save all",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "sav",
+      "results": [
+        {
+          "id": "a10",
+          "score": 0.0009999999999999998,
+          "kbarScore": 0.9990009990009991,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Save",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a11",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Save as",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Save under a new name",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a17",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "save",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a12",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Save all",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "svae",
+      "results": []
+    },
+    {
+      "query": "sve",
+      "results": []
+    },
+    {
+      "query": "open",
+      "results": [
+        {
+          "id": "a07",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open file",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Open a file from disk",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a05",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open settings",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a09",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open folder",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a06",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open keyboard shortcuts",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a08",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open recent file",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  8,
+                  9
+                ],
+                [
+                  15,
+                  15
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "opn",
+      "results": []
+    },
+    {
+      "query": "op",
+      "results": [
+        {
+          "id": "a07",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open file",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Open a file from disk",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a04",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Follow the operating system",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  11,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a11",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "copy",
+              "indices": [
+                [
+                  1,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a05",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open settings",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a09",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open folder",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  6,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a47",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Debug: stop",
+              "indices": [
+                [
+                  9,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a06",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open keyboard shortcuts",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a08",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open recent file",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a49",
+          "score": 0.21355020860474386,
+          "kbarScore": 0.824028534550483,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Copy path of active file",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "go",
+      "results": [
+        {
+          "id": "a55",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "logout",
+              "indices": [
+                [
+                  1,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a28",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go back",
+              "indices": [
+                [
+                  0,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a29",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go forward",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a25",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to line",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a26",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to symbol",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a27",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to definition",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "goto",
+      "results": []
+    },
+    {
+      "query": "go to",
+      "results": [
+        {
+          "id": "a25",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to line",
+              "indices": [
+                [
+                  0,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a26",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to symbol",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a27",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to definition",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a29",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go forward",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "line",
+      "results": [
+        {
+          "id": "a25",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to line",
+              "indices": [
+                [
+                  6,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "symbol",
+      "results": [
+        {
+          "id": "a42",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Rename symbol",
+              "indices": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  7,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a26",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to symbol",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "def",
+      "results": [
+        {
+          "id": "a26",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "definition",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a27",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Go to definition",
+              "indices": [
+                [
+                  6,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "toggle",
+      "results": [
+        {
+          "id": "a01",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a32",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle sidebar",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a48",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle breakpoint",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a34",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle full screen",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  9,
+                  10
+                ],
+                [
+                  15,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a35",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle word wrap",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "tggle",
+      "results": [
+        {
+          "id": "a01",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a32",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle sidebar",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a48",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle breakpoint",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a34",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle full screen",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  5
+                ],
+                [
+                  9,
+                  10
+                ],
+                [
+                  15,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a35",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle word wrap",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "togle",
+      "results": [
+        {
+          "id": "a01",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle theme",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a32",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle sidebar",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  10,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a33",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  14,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a48",
+          "score": 0.5661273069982156,
+          "kbarScore": 0.6385176961869674,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle breakpoint",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  16,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a34",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle full screen",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  9,
+                  10
+                ],
+                [
+                  15,
+                  16
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a35",
+          "score": 0.6285605986265814,
+          "kbarScore": 0.6140391710589909,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle word wrap",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "new",
+      "results": [
+        {
+          "id": "a21",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "new",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a11",
+          "score": 0.045603691595129614,
+          "kbarScore": 0.9563852997443433,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Save under a new name",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  13,
+                  15
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  20,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a39",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New file",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a40",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New window",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a41",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New terminal",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "nw",
+      "results": []
+    },
+    {
+      "query": "zoom",
+      "results": [
+        {
+          "id": "a36",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Zoom in",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a37",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Zoom out",
+              "indices": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a38",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reset zoom",
+              "indices": [
+                [
+                  6,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "zm",
+      "results": []
+    },
+    {
+      "query": "term",
+      "results": [
+        {
+          "id": "a33",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  10
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Show or hide the terminal",
+              "indices": [
+                [
+                  6,
+                  6
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  17,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a41",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New terminal",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  7
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "terminal",
+      "results": [
+        {
+          "id": "a33",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Toggle terminal",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  4,
+                  5
+                ],
+                [
+                  7,
+                  14
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Show or hide the terminal",
+              "indices": [
+                [
+                  6,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  17,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a41",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New terminal",
+              "indices": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  4,
+                  11
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "shell",
+      "results": [
+        {
+          "id": "a33",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "shell",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a41",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "shell",
+              "indices": [
+                [
+                  0,
+                  4
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "console",
+      "results": [
+        {
+          "id": "a33",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "console",
+              "indices": [
+                [
+                  0,
+                  6
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "test",
+      "results": [
+        {
+          "id": "a44",
+          "score": 9.262327071316876e-11,
+          "kbarScore": 0.9999999999073768,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Run all tests",
+              "indices": [
+                [
+                  8,
+                  12
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "test",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Run the entire test suite",
+              "indices": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  15,
+                  18
+                ],
+                [
+                  20,
+                  20
+                ],
+                [
+                  23,
+                  24
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a45",
+          "score": 2.64984281366903e-9,
+          "kbarScore": 0.9999999973501572,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Run test at cursor",
+              "indices": [
+                [
+                  4,
+                  7
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  15,
+                  15
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "test",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "tst",
+      "results": []
+    },
+    {
+      "query": "run",
+      "results": [
+        {
+          "id": "a46",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "run",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a47",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "run",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a44",
+          "score": 0.006215842477525225,
+          "kbarScore": 0.9938225555441262,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Run all tests",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Run the entire test suite",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  21,
+                  21
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a45",
+          "score": 0.17782794100389226,
+          "kbarScore": 0.8490204427886767,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Run test at cursor",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  13,
+                  14
+                ],
+                [
+                  17,
+                  17
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "help",
+      "results": [
+        {
+          "id": "a57",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "help",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a58",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "help",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a59",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "help",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "docs",
+      "results": [
+        {
+          "id": "a57",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "docs",
+              "indices": [
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "doc",
+      "results": [
+        {
+          "id": "a57",
+          "score": 0.000018578044550916986,
+          "kbarScore": 0.9999814223005864,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Documentation",
+              "indices": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            },
+            {
+              "key": "keywords",
+              "value": "docs",
+              "indices": [
+                [
+                  0,
+                  2
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Read the documentation",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  9,
+                  11
+                ],
+                [
+                  20,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a30",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Format document",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "file",
+      "results": [
+        {
+          "id": "a07",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open file",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  5,
+                  8
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Open a file from disk",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  7,
+                  10
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a10",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  13,
+                  13
+                ],
+                [
+                  17,
+                  20
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a30",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Reformat the whole file",
+              "indices": [
+                [
+                  1,
+                  2
+                ],
+                [
+                  11,
+                  11
+                ],
+                [
+                  16,
+                  17
+                ],
+                [
+                  19,
+                  22
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a56",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "profile",
+              "indices": [
+                [
+                  3,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a13",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Close file",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  6,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a39",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New file",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a08",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open recent file",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  8,
+                  8
+                ],
+                [
+                  12,
+                  15
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a14",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Close all files",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  4,
+                  4
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  13
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a23",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Search in files",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  10,
+                  13
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a50",
+          "score": 0.17782794100389226,
+          "kbarScore": 0.8490204427886767,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reveal in file explorer",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  10,
+                  13
+                ],
+                [
+                  15,
+                  15
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  21,
+                  21
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a49",
+          "score": 0.21355020860474386,
+          "kbarScore": 0.824028534550483,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Copy path of active file",
+              "indices": [
+                [
+                  11,
+                  11
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  18,
+                  18
+                ],
+                [
+                  20,
+                  23
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "fil",
+      "results": [
+        {
+          "id": "a07",
+          "score": 0.003967345289316547,
+          "kbarScore": 0.9960483323407563,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open file",
+              "indices": [
+                [
+                  5,
+                  7
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Open a file from disk",
+              "indices": [
+                [
+                  7,
+                  9
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a10",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Save the current file",
+              "indices": [
+                [
+                  17,
+                  19
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a30",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "subtitle",
+              "value": "Reformat the whole file",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  19,
+                  21
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a56",
+          "score": 0.03162277660168379,
+          "kbarScore": 0.9693465699682844,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "profile",
+              "indices": [
+                [
+                  3,
+                  5
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a13",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Close file",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  6,
+                  8
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a39",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New file",
+              "indices": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a08",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open recent file",
+              "indices": [
+                [
+                  12,
+                  14
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a14",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Close all files",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a23",
+          "score": 0.13630130062078274,
+          "kbarScore": 0.8800482754474375,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Search in files",
+              "indices": [
+                [
+                  7,
+                  7
+                ],
+                [
+                  10,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a50",
+          "score": 0.17782794100389226,
+          "kbarScore": 0.8490204427886767,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reveal in file explorer",
+              "indices": [
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  10,
+                  12
+                ],
+                [
+                  18,
+                  18
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a49",
+          "score": 0.21355020860474386,
+          "kbarScore": 0.824028534550483,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Copy path of active file",
+              "indices": [
+                [
+                  11,
+                  11
+                ],
+                [
+                  16,
+                  16
+                ],
+                [
+                  20,
+                  22
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "flie",
+      "results": []
+    },
+    {
+      "query": "window",
+      "results": [
+        {
+          "id": "a15",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Close window",
+              "indices": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  6,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a40",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New window",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a52",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reload window",
+              "indices": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  5,
+                  5
+                ],
+                [
+                  7,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.27101916318908426,
+          "kbarScore": 0.7867701990353343,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  13,
+                  14
+                ],
+                [
+                  19,
+                  19
+                ],
+                [
+                  21,
+                  21
+                ],
+                [
+                  31,
+                  31
+                ],
+                [
+                  35,
+                  37
+                ],
+                [
+                  39,
+                  44
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "win",
+      "results": [
+        {
+          "id": "a15",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Close window",
+              "indices": [
+                [
+                  6,
+                  8
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a40",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "New window",
+              "indices": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  2,
+                  2
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a52",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reload window",
+              "indices": [
+                [
+                  7,
+                  9
+                ],
+                [
+                  12,
+                  12
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.27101916318908426,
+          "kbarScore": 0.7867701990353343,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  13,
+                  13
+                ],
+                [
+                  31,
+                  31
+                ],
+                [
+                  35,
+                  35
+                ],
+                [
+                  37,
+                  37
+                ],
+                [
+                  39,
+                  41
+                ],
+                [
+                  44,
+                  44
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "wndw",
+      "results": []
+    },
+    {
+      "query": "refactor",
+      "results": [
+        {
+          "id": "a42",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "refactor",
+              "indices": [
+                [
+                  0,
+                  7
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a43",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "refactor",
+              "indices": [
+                [
+                  0,
+                  7
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "rename",
+      "results": [
+        {
+          "id": "a42",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Rename symbol",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "settings",
+      "results": [
+        {
+          "id": "a05",
+          "score": 0.0006584154299433825,
+          "kbarScore": 0.9993420177956925,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Open settings",
+              "indices": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  5,
+                  12
+                ]
+              ]
+            },
+            {
+              "key": "subtitle",
+              "value": "Application settings",
+              "indices": [
+                [
+                  4,
+                  4
+                ],
+                [
+                  7,
+                  8
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  12,
+                  19
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "prefs",
+      "results": [
+        {
+          "id": "a05",
+          "score": 0.4472135954999579,
+          "kbarScore": 0.6909830056250527,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "preferences",
+              "indices": [
+                [
+                  0,
+                  6
+                ],
+                [
+                  9,
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "preferences",
+      "results": [
+        {
+          "id": "a05",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "preferences",
+              "indices": [
+                [
+                  0,
+                  10
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a58",
+          "score": 0.6115125354162649,
+          "kbarScore": 0.6205350427148201,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Keyboard shortcuts reference",
+              "indices": [
+                [
+                  1,
+                  1
+                ],
+                [
+                  6,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  14,
+                  14
+                ],
+                [
+                  17,
+                  17
+                ],
+                [
+                  19,
+                  27
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "config",
+      "results": [
+        {
+          "id": "a05",
+          "score": 1.4901161193847656e-8,
+          "kbarScore": 0.999999985098839,
+          "matches": [
+            {
+              "key": "keywords",
+              "value": "config",
+              "indices": [
+                [
+                  0,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "clear cache",
+      "results": [
+        {
+          "id": "a60",
+          "score": 0.27101916318908426,
+          "kbarScore": 0.7867701990353343,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  0,
+                  12
+                ],
+                [
+                  15,
+                  18
+                ],
+                [
+                  20,
+                  20
+                ],
+                [
+                  22,
+                  22
+                ],
+                [
+                  24,
+                  27
+                ],
+                [
+                  30,
+                  30
+                ],
+                [
+                  32,
+                  33
+                ],
+                [
+                  38,
+                  38
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "reload",
+      "results": [
+        {
+          "id": "a52",
+          "score": 0.08699614330652679,
+          "kbarScore": 0.9199664655277491,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Reload window",
+              "indices": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  10,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a60",
+          "score": 0.27101916318908426,
+          "kbarScore": 0.7867701990353343,
+          "matches": [
+            {
+              "key": "name",
+              "value": "Clear cache and reload the application window",
+              "indices": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  7,
+                  7
+                ],
+                [
+                  10,
+                  10
+                ],
+                [
+                  12,
+                  12
+                ],
+                [
+                  14,
+                  14
+                ],
+                [
+                  16,
+                  21
+                ],
+                [
+                  25,
+                  25
+                ],
+                [
+                  27,
+                  27
+                ],
+                [
+                  30,
+                  30
+                ],
+                [
+                  33,
+                  33
+                ],
+                [
+                  36,
+                  36
+                ],
+                [
+                  42,
+                  43
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "query": "xyzzy",
+      "results": []
+    },
+    {
+      "query": "qqqq",
+      "results": []
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: flutter_kbar
+description: >-
+  A composable, keyboard-first command palette for Flutter desktop and web,
+  with nested actions, fuzzy search and multi-key shortcuts. A port of kbar.
+version: 0.1.0
+# Set these once the repository exists; pub.dev verifies that the URL resolves.
+# repository: https://github.com/<you>/flutter_kbar
+# issue_tracker: https://github.com/<you>/flutter_kbar/issues
+
+topics:
+  - command-palette
+  - keyboard-shortcuts
+  - search
+  - desktop
+  - ui
+
+platforms:
+  linux:
+  macos:
+  web:
+  windows:
+
+environment:
+  sdk: ^3.9.0
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Already a direct dependency of package:flutter, so this costs consumers
+  # nothing. Used for DeepCollectionEquality in the selector layer.
+  collection: ^1.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  fake_async: ^1.3.0
+
+flutter:

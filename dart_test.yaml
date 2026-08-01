@@ -1,0 +1,8 @@
+tags:
+  # Validates the matchers against fixtures captured from real fuse.js and
+  # cmdk. Regenerate with the scripts under tool/.
+  oracle:
+  # Layout and colour regression images. Rasterisation differs between
+  # platforms, so regenerate on one platform:
+  #   flutter test --tags golden --update-goldens
+  golden:
