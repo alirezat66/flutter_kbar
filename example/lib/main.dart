@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kbar/flutter_kbar.dart';
 
 import 'demo_actions.dart';
+import 'escape_to_go_back.dart';
 import 'headless_example.dart';
 
 void main() => runApp(const DemoApp());
@@ -49,10 +50,13 @@ class _DemoAppState extends State<DemoApp> {
             darkTheme: _theme(Brightness.dark),
             // Placing the palette here keeps it above every route.
             builder: (BuildContext context, Widget? child) => KBarPalette(
-              child: MediaQuery.withClampedTextScaling(
-                minScaleFactor: _state.textScale,
-                maxScaleFactor: _state.textScale,
-                child: child!,
+              child: EscapeToGoBack(
+                navigatorKey: _navigatorKey,
+                child: MediaQuery.withClampedTextScaling(
+                  minScaleFactor: _state.textScale,
+                  maxScaleFactor: _state.textScale,
+                  child: child!,
+                ),
               ),
             ),
             home: HomePage(state: _state),
@@ -132,6 +136,7 @@ class HomePage extends StatelessWidget {
                       _Hint('Press t — a parent shortcut opens that page'),
                       _Hint('Press g then h — a two-key sequence'),
                       _Hint('Backspace on an empty query — go back up'),
+                      _Hint('Esc — close a dialog or go back a page'),
                       _Hint('Cmd/Ctrl+Z — undo a theme change'),
                       _Hint('↑ ↓ or Ctrl+N / Ctrl+P — move the selection'),
                     ],

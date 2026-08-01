@@ -15,6 +15,7 @@ Press <kbd>⌘K</kbd> (<kbd>Ctrl+K</kbd> off Apple platforms) to open the palett
 | `lib/main.dart` | `KBarProvider` + `KBarPalette` in `MaterialApp.builder`, live theming |
 | `lib/demo_actions.dart` | sections with priorities, nested actions, sequence shortcuts, undoable commands, an async command |
 | `lib/feedback_dialog.dart` | a validated form opened as a dialog **from a palette command** |
+| `lib/escape_to_go_back.dart` | app-wide <kbd>Esc</kbd> — closes a dialog, pops a page, ignored at the root |
 | `lib/headless_example.dart` | `KBarRegisterActions`, `KBarSelector`, `KBarMatchesBuilder`, and a palette built from the raw primitives |
 
 ## Opening a dialog from a command
@@ -48,6 +49,8 @@ Things worth trying once it's open:
 - Press <kbd>t</kbd> while closed — a shortcut on a parent opens the palette *at* that parent.
 - Press <kbd>g</kbd> then <kbd>h</kbd> — a two-key sequence.
 - Press <kbd>Backspace</kbd> on an empty query inside a nested action — go back up.
+- Press <kbd>Esc</kbd> repeatedly — closes the palette, then the dialog, then the page,
+  and does nothing once you are home.
 - Press <kbd>⌘Z</kbd> after changing the theme — undo.
 - Open the headless example page, then search for `confetti` — actions registered by a page
   exist only while that page is mounted.
