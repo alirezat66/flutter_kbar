@@ -5,7 +5,7 @@ faithful port of the React [kbar](https://github.com/timc1/kbar) package.
 
 Press <kbd>⌘K</kbd>, type, hit <kbd>↵</kbd>.
 
-![flutter_kbar command palette demo](doc/screen-kbar.gif)
+![flutter_kbar command palette demo](https://raw.githubusercontent.com/alirezat66/flutter_kbar/main/doc/screen-kbar.gif)
 
 - **Nested actions** — actions form a tree; selecting a parent descends into its children,
   Backspace goes back up.

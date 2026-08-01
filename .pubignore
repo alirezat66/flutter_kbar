@@ -1,0 +1,28 @@
+# Files kept in git but excluded from the published archive.
+#
+# .pubignore REPLACES .gitignore for publishing — when this file exists, pub
+# stops consulting .gitignore entirely, so anything that must stay out of the
+# archive has to be listed here too (see the build artefacts block below).
+
+# The demo GIF is 4.4 MB and is the entire weight of the package. The README
+# links it from raw.githubusercontent.com instead, so it still renders on
+# pub.dev and GitHub without every consumer downloading it.
+doc/
+
+# Test oracle fixtures (~770 KB) captured from the reference JS implementations
+# of fuse.js and command-score. They validate the matchers during development
+# and are meaningless to anyone depending on the package.
+test/
+
+# Node scripts that regenerate the fixtures above.
+tool/
+
+# Build artefacts and local tooling. Normally covered by .gitignore, but that
+# file is ignored once .pubignore exists.
+build/
+.dart_tool/
+.idea/
+*.iml
+coverage/
+dart_test.yaml
+pubspec.lock

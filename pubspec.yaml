@@ -3,9 +3,8 @@ description: >-
   A composable, keyboard-first command palette for Flutter desktop and web,
   with nested actions, fuzzy search and multi-key shortcuts. A port of kbar.
 version: 0.1.0
-# Set these once the repository exists; pub.dev verifies that the URL resolves.
-# repository: https://github.com/<you>/flutter_kbar
-# issue_tracker: https://github.com/<you>/flutter_kbar/issues
+repository: https://github.com/alirezat66/flutter_kbar
+issue_tracker: https://github.com/alirezat66/flutter_kbar/issues
 
 topics:
   - command-palette
