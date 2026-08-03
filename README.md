@@ -1,7 +1,13 @@
 # flutter_kbar
 
+<p align="center">
+  <img src="doc/kbar-icon.png" width="160" alt="flutter_kbar logo">
+</p>
+
 A fast, composable, keyboard-first command palette for Flutter **desktop and web** — a
 faithful port of the React [kbar](https://github.com/timc1/kbar) package.
+
+**[Live demo and step-by-step setup guide](https://kbar.taghizadeh.dev)**
 
 Press <kbd>⌘K</kbd>, type, hit <kbd>↵</kbd>.
 
@@ -22,7 +28,7 @@ Press <kbd>⌘K</kbd>, type, hit <kbd>↵</kbd>.
 
 ```yaml
 dependencies:
-  flutter_kbar: ^0.1.0
+  flutter_kbar: ^1.0.0
 ```
 
 ## Quick start

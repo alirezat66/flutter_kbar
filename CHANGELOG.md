@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.0
+
+First stable release.
+
+### Added
+
+- Project branding and web app icons for the hosted example.
+- A copyable, step-by-step setup guide in the example app.
+- Package homepage at [kbar.taghizadeh.dev](https://kbar.taghizadeh.dev).
+
 ## 0.1.0
 
 Initial release — a port of the React [kbar](https://github.com/timc1/kbar) package for

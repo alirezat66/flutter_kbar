@@ -8,6 +8,8 @@ class DemoState extends ChangeNotifier {
   ThemeMode _themeMode = ThemeMode.dark;
   Color _seedColor = const Color(0xFF6C8CFF);
   double _textScale = 1;
+  bool _useHeadlessPalette = false;
+  bool _isDisposed = false;
   final List<String> _log = <String>[];
 
   /// The active theme mode.
@@ -21,6 +23,17 @@ class DemoState extends ChangeNotifier {
 
   /// Recently performed commands, newest first.
   List<String> get log => List<String>.unmodifiable(_log);
+
+  /// Whether the example should render its primitive-built palette.
+  bool get useHeadlessPalette => _useHeadlessPalette;
+
+  /// Switches between the bundled and primitive-built palette interfaces.
+  void setUseHeadlessPalette(bool value) {
+    if (_isDisposed) return;
+    if (_useHeadlessPalette == value) return;
+    _useHeadlessPalette = value;
+    notifyListeners();
+  }
 
   /// Sets the theme mode and records it.
   void setThemeMode(ThemeMode mode) {
@@ -47,6 +60,12 @@ class DemoState extends ChangeNotifier {
     _log.insert(0, message);
     if (_log.length > 12) _log.removeLast();
     notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    _isDisposed = true;
+    super.dispose();
   }
 }
 

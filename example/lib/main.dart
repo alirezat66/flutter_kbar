@@ -4,6 +4,7 @@ import 'package:flutter_kbar/flutter_kbar.dart';
 import 'demo_actions.dart';
 import 'escape_to_go_back.dart';
 import 'headless_example.dart';
+import 'setup_guide.dart';
 
 void main() => runApp(const DemoApp());
 
@@ -49,16 +50,19 @@ class _DemoAppState extends State<DemoApp> {
             theme: _theme(Brightness.light),
             darkTheme: _theme(Brightness.dark),
             // Placing the palette here keeps it above every route.
-            builder: (BuildContext context, Widget? child) => KBarPalette(
-              child: EscapeToGoBack(
+            builder: (BuildContext context, Widget? child) {
+              final Widget app = EscapeToGoBack(
                 navigatorKey: _navigatorKey,
                 child: MediaQuery.withClampedTextScaling(
                   minScaleFactor: _state.textScale,
                   maxScaleFactor: _state.textScale,
                   child: child!,
                 ),
-              ),
-            ),
+              );
+              return _state.useHeadlessPalette
+                  ? MinimalPalette(child: app)
+                  : KBarPalette(child: app);
+            },
             home: HomePage(state: _state),
           ),
         );
@@ -117,7 +121,18 @@ class HomePage extends StatelessWidget {
                     OutlinedButton.icon(
                       onPressed: () => Navigator.of(context).push(
                         MaterialPageRoute<void>(
-                          builder: (_) => const HeadlessExamplePage(),
+                          builder: (_) => const SetupGuidePage(),
+                        ),
+                      ),
+                      icon: const Icon(Icons.code),
+                      label: const Text('Setup guide'),
+                    ),
+                    OutlinedButton.icon(
+                      onPressed: () => Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => HeadlessExamplePage(
+                            onPaletteModeChanged: state.setUseHeadlessPalette,
+                          ),
                         ),
                       ),
                       icon: const Icon(Icons.construction_outlined),

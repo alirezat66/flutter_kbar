@@ -1,12 +1,12 @@
 {
-    "name": "flutter_kbar_example",
-    "short_name": "flutter_kbar_example",
+    "name": "flutter_kbar",
+    "short_name": "kbar",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
+    "background_color": "#020b1e",
+    "theme_color": "#020b1e",
+    "description": "A keyboard-first command palette for Flutter desktop and web.",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {
