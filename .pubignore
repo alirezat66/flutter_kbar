@@ -6,8 +6,9 @@
 
 # The demo GIF is 4.4 MB and is the entire weight of the package. The README
 # links it from raw.githubusercontent.com instead, so it still renders on
-# pub.dev and GitHub without every consumer downloading it.
-doc/
+# pub.dev and GitHub without every consumer downloading it. Keep the package
+# artwork in this directory because pub.dev's screenshots metadata needs it.
+doc/screen-kbar.gif
 
 # Test oracle fixtures (~770 KB) captured from the reference JS implementations
 # of fuse.js and command-score. They validate the matchers during development
