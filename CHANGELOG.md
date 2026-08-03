@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1
+
+### Added
+
+- A wide package banner in the README.
+- Pub.dev screenshot metadata using the project logo as the package thumbnail.
+
 ## 1.0.0
 
 First stable release.

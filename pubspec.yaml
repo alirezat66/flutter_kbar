@@ -2,10 +2,16 @@ name: flutter_kbar
 description: >-
   A composable, keyboard-first command palette for Flutter desktop and web,
   with nested actions, fuzzy search and multi-key shortcuts. A port of kbar.
-version: 1.0.0
+version: 1.0.1
 homepage: https://kbar.taghizadeh.dev
 repository: https://github.com/alirezat66/flutter_kbar
 issue_tracker: https://github.com/alirezat66/flutter_kbar/issues
+
+screenshots:
+  - description: 'The flutter_kbar command palette logo.'
+    path: doc/kbar-icon.png
+  - description: 'flutter_kbar, a keyboard-first command palette for Flutter.'
+    path: doc/kbar-banner.png
 
 topics:
   - command-palette
